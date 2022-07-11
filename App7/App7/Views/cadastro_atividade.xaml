@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.Views.cadastro_atividade">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Nova" Order="Primary" Command="{Binding NovaAtividade}"/>
+        
+        <ToolbarItem 
+            Text="Salvar"
+            IconImageSource="salvar"
+            Order="Primary" Command="{Binding Salvar}"/>
+    </ContentPage.ToolbarItems>
+    
+    
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="id"/>
+            
+            <Label Text="Descrição"/>
+            
+            <Entry Keyboard="Numeric" Placeholder="Registro de invetario"/>
+         
+            
+            <Label Text="Data:"/>
+            <DatePicker Format="dd/MM/yyyy"/>
+
+
+            <Label Text="Peso"/>
+            <Entry Placeholder="Registro de invetario"/>
+
+            <Label Text="Observaçõs"/>
+            <Entry Placeholder="Registro de invetario"/>
+            
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
